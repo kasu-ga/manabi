@@ -1,4 +1,4 @@
-import { SessionData, UserData } from "mixe";
+import { SessionData, UserData } from "mixejs";
 
 export class SessionCookie {
   static async encode(payload: {

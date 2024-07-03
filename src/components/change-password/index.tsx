@@ -2,7 +2,7 @@ import { validateResetPasswordCodeAction } from "@/actions/reset-password";
 import { Form } from "../ui/form";
 import { FormButton } from "../ui/form/button";
 import { Input } from "../ui/form/input";
-import { SessionData } from "mixe";
+import { SessionData } from "mixejs";
 import { getTranslations } from "@/services/translations";
 
 export async function ChangePasswordForm({

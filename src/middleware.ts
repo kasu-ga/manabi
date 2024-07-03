@@ -1,4 +1,4 @@
-import { TokenType } from "mixe";
+import { TokenType } from "mixejs";
 import { NextRequest, NextResponse } from "next/server";
 import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";

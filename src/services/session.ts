@@ -1,7 +1,7 @@
 "use server";
 
 import { SessionCookie } from "@/lib/cookies";
-import { SessionData, UserData } from "mixe";
+import { SessionData, UserData } from "mixejs";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 

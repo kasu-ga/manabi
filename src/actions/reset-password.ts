@@ -1,7 +1,7 @@
 import { eq } from "drizzle-orm";
 import { email, minLength, object, pipe, string } from "valibot";
 import { redirect } from "next/navigation";
-import { SessionData, TokenType } from "mixe";
+import { SessionData, TokenType } from "mixejs";
 
 import { db } from "@/db";
 import { getSessionData } from "@/services/session";
