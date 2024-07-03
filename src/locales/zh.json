@@ -1,0 +1,85 @@
+{
+  "common": {
+    "language": "语言",
+    "new": "新建",
+    "email": "电子邮件",
+    "password": "密码",
+    "continue": "继续",
+    "send": "发送",
+    "settings": "设置",
+    "logout": "登出",
+    "edit": "编辑",
+    "add": "添加",
+    "delete": "删除",
+    "save": "保存",
+    "name": "名称",
+    "create": "创建",
+    "text": "文本",
+    "reading": "阅读",
+    "back": "返回",
+    "front": "正面",
+    "not-selected": "未选择",
+    "yes": "是"
+  },
+  "signin": {
+    "email-or-password-invalid": "邮箱或密码不正确",
+    "title": "登录",
+    "forgot-password": "忘记密码？",
+    "new-here": "新用户？",
+    "sign-up": "注册"
+  },
+  "signup": {
+    "title": "创建账户",
+    "has-account": "已有账户？",
+    "sign-in": "登录",
+    "email-already-exists": "邮箱已存在",
+    "invalid-email": "邮箱无效",
+    "invalid-password": "密码太短"
+  },
+  "recovery": {
+    "title": "恢复代码",
+    "description": "输入您的电子邮件地址，您将很快收到一个恢复代码。使用它来重置您的密码。"
+  },
+  "change-password": {
+    "title": "更改密码",
+    "description": "输入您通过电子邮件收到的恢复代码。如果您还没有收到，请检查您的垃圾邮件文件夹或在上一页上请求一个新的。",
+    "recovery-code": "恢复代码",
+    "new-password": "新密码"
+  },
+  "user-desks": {
+    "title": "您的桌子",
+    "review": "复习"
+  },
+  "study": {
+    "review": "复习",
+    "show-back": "显示背面",
+    "again": "再次",
+    "hard": "困难",
+    "normal": "正常",
+    "easy": "简单",
+    "very-easy": "非常简单",
+    "empty": "這裡沒什麼好看的。"
+  },
+  "delete-desk": {
+    "write": "请写下",
+    "description": "以确认您确实要删除此桌子。"
+  },
+  "delete-card": {
+    "write": "请写下",
+    "description": "以确认您确实要删除此卡片。"
+  },
+  "card-actions": {
+    "invalid-image-extname": "Valid formats: (png,jpeg,jpg)",
+    "invalid-audio-extname": "Valid formats: (mp3)",
+    "delete-match-error": "It is not the desired value",
+    "limit-exceeded": "已達到卡數上限"
+  },
+  "desk-actions": {
+    "name-too-short": "Name too short",
+    "name-does-not-match": "The name does not match",
+    "limit-exceeded": "已達到辦公桌限制"
+  },
+  "reset-password": {
+    "user-not-found": "User not found"
+  }
+}

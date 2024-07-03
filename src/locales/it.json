@@ -1,0 +1,80 @@
+{
+  "common": {
+    "language": "Lingua",
+    "new": "Nuovo",
+    "email": "Email",
+    "password": "Password",
+    "continue": "Continua",
+    "send": "Invia",
+    "settings": "Impostazioni",
+    "logout": "Esci",
+    "edit": "Modifica",
+    "add": "Aggiungi",
+    "delete": "Elimina",
+    "save": "Salva",
+    "name": "Nome",
+    "create": "Crea",
+    "text": "Testo",
+    "reading": "Lettura",
+    "back": "Indietro",
+    "front": "Fronte",
+    "not-selected": "Non selezionato",
+    "yes": "Sì"
+  },
+  "signin": {
+    "email-or-password-invalid": "Email o password non corretti",
+    "title": "Accedi",
+    "forgot-password": "Hai dimenticato la password?",
+    "new-here": "Nuovo qui?",
+    "sign-up": "Registrati"
+  },
+  "signup": {
+    "title": "Crea un Account",
+    "has-account": "Hai già un account?",
+    "sign-in": "Accedi",
+    "email-already-exists": "L'email esiste già",
+    "invalid-email": "Email non valida",
+    "invalid-password": "Password troppo corta"
+  },
+  "recovery": {
+    "title": "Codice di Recupero",
+    "description": "Inserisci il tuo indirizzo email e riceverai un codice di recupero. Usalo per reimpostare la tua password."
+  },
+  "change-password": {
+    "title": "Cambia Password",
+    "description": "Inserisci il codice di recupero ricevuto via email. Se non l'hai ancora ricevuto, controlla la cartella spam o richiedine uno nuovo nella pagina precedente.",
+    "recovery-code": "Codice di recupero",
+    "new-password": "Nuova password"
+  },
+  "user-desks": { "title": "Le Tue Scrivanie", "review": "Revisione" },
+  "study": {
+    "review": "Revisione",
+    "show-back": "Mostra retro",
+    "again": "Ancora",
+    "hard": "Difficile",
+    "normal": "Normale",
+    "easy": "Facile",
+    "very-easy": "Molto facile",
+    "empty": "Non c'è niente da mostrare"
+  },
+  "delete-desk": {
+    "write": "Scrivi",
+    "description": "qui sotto per confermare che desideri davvero eliminare questa Scrivania."
+  },
+  "delete-card": {
+    "write": "Scrivi",
+    "description": "qui sotto per confermare che desideri davvero eliminare questa Carta."
+  },
+  "card-actions": {
+    "invalid-image-extname": "Formati validi: (png, jpeg, jpg)",
+    "invalid-audio-extname": "Formati validi: (mp3)",
+    "delete-match-error": "Non è il valore desiderato",
+    "limit-exceeded": "Limite carte raggiunto"
+  },
+  "desk-actions": {
+    "name-too-short": "Nome troppo corto",
+    "name-does-not-match": "Il nome non corrisponde",
+    "limit-exceeded": "Limite scrivania raggiunto"
+  },
+  "reset-password": { "user-not-found": "Utente non trovato" }
+}

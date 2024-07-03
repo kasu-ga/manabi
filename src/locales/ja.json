@@ -1,0 +1,85 @@
+{
+  "common": {
+    "language": "言語",
+    "new": "新規",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "continue": "続行",
+    "send": "送信",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "edit": "編集",
+    "add": "追加",
+    "delete": "削除",
+    "save": "保存",
+    "name": "名前",
+    "create": "作成",
+    "text": "テキスト",
+    "reading": "読み方",
+    "back": "戻る",
+    "front": "表",
+    "not-selected": "未選択",
+    "yes": "はい"
+  },
+  "signin": {
+    "email-or-password-invalid": "メールアドレスまたはパスワードが正しくありません",
+    "title": "サインイン",
+    "forgot-password": "パスワードを忘れましたか？",
+    "new-here": "初めてですか？",
+    "sign-up": "サインアップ"
+  },
+  "signup": {
+    "title": "アカウントを作成",
+    "has-account": "すでにアカウントをお持ちですか？",
+    "sign-in": "サインイン",
+    "email-already-exists": "メールアドレスは既に存在しています",
+    "invalid-email": "無効なメールアドレス",
+    "invalid-password": "パスワードが短すぎます"
+  },
+  "recovery": {
+    "title": "リカバリーコード",
+    "description": "メールアドレスを入力すると、すぐにリカバリーコードが送信されます。パスワードをリセットするために使用してください。"
+  },
+  "change-password": {
+    "title": "パスワードの変更",
+    "description": "メールで受け取ったリカバリーコードを入力してください。まだ受け取っていない場合は、スパムフォルダーを確認するか、前のページで新しいコードをリクエストしてください。",
+    "recovery-code": "リカバリーコード",
+    "new-password": "新しいパスワード"
+  },
+  "user-desks": {
+    "title": "あなたのデスク",
+    "review": "レビュー"
+  },
+  "study": {
+    "review": "レビュー",
+    "show-back": "裏面を表示",
+    "again": "再度",
+    "hard": "難しい",
+    "normal": "普通",
+    "easy": "簡単",
+    "very-easy": "とても簡単",
+    "empty": "見せるものは何もない"
+  },
+  "delete-desk": {
+    "write": "以下に書いて",
+    "description": "このデスクを本当に削除したいことを確認してください。"
+  },
+  "delete-card": {
+    "write": "以下に書いて",
+    "description": "このカードを本当に削除したいことを確認してください。"
+  },
+  "card-actions": {
+    "invalid-image-extname": "有効な形式：(png,jpeg,jpg)",
+    "invalid-audio-extname": "有効な形式：(mp3)",
+    "delete-match-error": "望む値ではありません",
+    "limit-exceeded": "カードの制限に達しました"
+  },
+  "desk-actions": {
+    "name-too-short": "名前が短すぎます",
+    "name-does-not-match": "名前が一致しません",
+    "limit-exceeded": "デスクの制限に達しました"
+  },
+  "reset-password": {
+    "user-not-found": "ユーザーが見つかりません"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "common": {
+    "language": "Language",
+    "new": "New",
+    "email": "Email",
+    "password": "Password",
+    "continue": "Continue",
+    "send": "Send",
+    "settings": "Settings",
+    "logout": "Logout",
+    "edit": "Edit",
+    "add": "Add",
+    "delete": "Delete",
+    "save": "Save",
+    "name": "Name",
+    "create": "Create",
+    "text": "Text",
+    "reading": "Reading",
+    "back": "Back",
+    "front": "Front",
+    "not-selected": "Not selected",
+    "yes": "Yes"
+  },
+  "signin": {
+    "email-or-password-invalid": "Incorrect email or password",
+    "title": "Sign In",
+    "forgot-password": "Forgot your password?",
+    "new-here": "New here?",
+    "sign-up": "Sign Up"
+  },
+  "signup": {
+    "title": "Create an Account",
+    "has-account": "Already have an account?",
+    "sign-in": "Sign In",
+    "email-already-exists": "Email already exists",
+    "invalid-email": "Email invalid",
+    "invalid-password": "Password too short"
+  },
+  "recovery": {
+    "title": "Recovery Code",
+    "description": "Enter your email address, and you'll receive a recovery code shortly. Use it to reset your password."
+  },
+  "change-password": {
+    "title": "Change Password",
+    "description": "Enter the recovery code you received via email. If you haven't received it yet, check your spam folder or request a new one on the previous page.",
+    "recovery-code": "Recovery code",
+    "new-password": "New password"
+  },
+  "user-desks": {
+    "title": "Your Desks",
+    "review": "Review"
+  },
+  "study": {
+    "review": "Review",
+    "show-back": "Show back",
+    "again": "Again",
+    "hard": "Hard",
+    "normal": "Normal",
+    "easy": "Easy",
+    "very-easy": "Very Easy",
+    "empty": "There is nothing to show"
+  },
+  "delete-desk": {
+    "write": "Writes",
+    "description": "below to confirm that you really want to delete this Desk."
+  },
+  "delete-card": {
+    "write": "Writes",
+    "description": "below to confirm that you really want to delete this Card."
+  },
+  "card-actions": {
+    "invalid-image-extname": "Valid formats: (png,jpeg,jpg)",
+    "invalid-audio-extname": "Valid formats: (mp3)",
+    "delete-match-error": "It is not the desired value",
+    "limit-exceeded": "Cards limit reached"
+  },
+  "desk-actions": {
+    "name-too-short": "Name too short",
+    "name-does-not-match": "The name does not match",
+    "limit-exceeded": "Desk limit reached"
+  },
+  "reset-password": {
+    "user-not-found": "User not found"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "common": {
+    "language": "Sprache",
+    "new": "Neu",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "continue": "Weiter",
+    "send": "Senden",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "edit": "Bearbeiten",
+    "add": "Hinzufügen",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "name": "Name",
+    "create": "Erstellen",
+    "text": "Text",
+    "reading": "Lesen",
+    "back": "Zurück",
+    "front": "Vorderseite",
+    "not-selected": "Nicht ausgewählt",
+    "yes": "Ja"
+  },
+  "signin": {
+    "email-or-password-invalid": "Falsche E-Mail oder Passwort",
+    "title": "Anmelden",
+    "forgot-password": "Passwort vergessen?",
+    "new-here": "Neu hier?",
+    "sign-up": "Registrieren"
+  },
+  "signup": {
+    "title": "Konto erstellen",
+    "has-account": "Hast du bereits ein Konto?",
+    "sign-in": "Anmelden",
+    "email-already-exists": "E-Mail existiert bereits",
+    "invalid-email": "Ungültige E-Mail",
+    "invalid-password": "Passwort zu kurz"
+  },
+  "recovery": {
+    "title": "Wiederherstellungscode",
+    "description": "Gib deine E-Mail-Adresse ein, und du erhältst in Kürze einen Wiederherstellungscode. Verwende ihn, um dein Passwort zurückzusetzen."
+  },
+  "change-password": {
+    "title": "Passwort ändern",
+    "description": "Gib den Wiederherstellungscode ein, den du per E-Mail erhalten hast. Wenn du ihn noch nicht erhalten hast, überprüfe deinen Spam-Ordner oder fordere einen neuen auf der vorherigen Seite an.",
+    "recovery-code": "Wiederherstellungscode",
+    "new-password": "Neues Passwort"
+  },
+  "user-desks": {
+    "title": "Deine Schreibtische",
+    "review": "Überprüfen"
+  },
+  "study": {
+    "review": "Überprüfen",
+    "show-back": "Rückseite anzeigen",
+    "again": "Erneut",
+    "hard": "Schwer",
+    "normal": "Normal",
+    "easy": "Leicht",
+    "very-easy": "Sehr leicht",
+    "empty": "Es gibt nichts zu zeigen"
+  },
+  "delete-desk": {
+    "write": "Schreibe",
+    "description": "unten, um zu bestätigen, dass du diesen Schreibtisch wirklich löschen möchtest."
+  },
+  "delete-card": {
+    "write": "Schreibe",
+    "description": "unten, um zu bestätigen, dass du diese Karte wirklich löschen möchtest."
+  },
+  "card-actions": {
+    "invalid-image-extname": "Gültige Formate: (png, jpeg, jpg)",
+    "invalid-audio-extname": "Gültige Formate: (mp3)",
+    "delete-match-error": "Es ist nicht der gewünschte Wert",
+    "limit-exceeded": "Kartenlimit erreicht"
+  },
+  "desk-actions": {
+    "name-too-short": "Name zu kurz",
+    "name-does-not-match": "Der Name stimmt nicht überein",
+    "limit-exceeded": "Arbeitsplatzlimit erreicht"
+  },
+  "reset-password": {
+    "user-not-found": "Benutzer nicht gefunden"
+  }
+}

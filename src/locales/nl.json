@@ -1,0 +1,85 @@
+{
+  "common": {
+    "language": "Taal",
+    "new": "Nieuw",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "continue": "Doorgaan",
+    "send": "Verzenden",
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "edit": "Bewerken",
+    "add": "Toevoegen",
+    "delete": "Verwijderen",
+    "save": "Opslaan",
+    "name": "Naam",
+    "create": "Aanmaken",
+    "text": "Tekst",
+    "reading": "Lezen",
+    "back": "Terug",
+    "front": "Voorkant",
+    "not-selected": "Niet geselecteerd",
+    "yes": "Ja"
+  },
+  "signin": {
+    "email-or-password-invalid": "Onjuist e-mailadres of wachtwoord",
+    "title": "Inloggen",
+    "forgot-password": "Wachtwoord vergeten?",
+    "new-here": "Nieuw hier?",
+    "sign-up": "Registreren"
+  },
+  "signup": {
+    "title": "Account aanmaken",
+    "has-account": "Heb je al een account?",
+    "sign-in": "Inloggen",
+    "email-already-exists": "E-mailadres bestaat al",
+    "invalid-email": "Ongeldig e-mailadres",
+    "invalid-password": "Wachtwoord te kort"
+  },
+  "recovery": {
+    "title": "Herstelcode",
+    "description": "Voer je e-mailadres in en je ontvangt binnenkort een herstelcode. Gebruik deze code om je wachtwoord opnieuw in te stellen."
+  },
+  "change-password": {
+    "title": "Wachtwoord wijzigen",
+    "description": "Voer de herstelcode in die je via e-mail hebt ontvangen. Als je deze nog niet hebt ontvangen, controleer dan je spammap of vraag een nieuwe code aan op de vorige pagina.",
+    "recovery-code": "Herstelcode",
+    "new-password": "Nieuw wachtwoord"
+  },
+  "user-desks": {
+    "title": "Jouw bureaus",
+    "review": "Beoordelen"
+  },
+  "study": {
+    "review": "Beoordelen",
+    "show-back": "Toon achterkant",
+    "again": "Opnieuw",
+    "hard": "Moeilijk",
+    "normal": "Normaal",
+    "easy": "Gemakkelijk",
+    "very-easy": "Zeer gemakkelijk",
+    "empty": "Er is niets te zien."
+  },
+  "delete-desk": {
+    "write": "Schrijf",
+    "description": "hieronder om te bevestigen dat je dit bureau echt wilt verwijderen."
+  },
+  "delete-card": {
+    "write": "Schrijf",
+    "description": "hieronder om te bevestigen dat je deze kaart echt wilt verwijderen."
+  },
+  "card-actions": {
+    "invalid-image-extname": "Geldige formaten: (png, jpeg, jpg)",
+    "invalid-audio-extname": "Geldige formaten: (mp3)",
+    "delete-match-error": "Dit is niet de gewenste waarde",
+    "limit-exceeded": "Kaartlimiet bereikt"
+  },
+  "desk-actions": {
+    "name-too-short": "Naam te kort",
+    "name-does-not-match": "De naam komt niet overeen",
+    "limit-exceeded": "Bureaulimiet bereikt"
+  },
+  "reset-password": {
+    "user-not-found": "Gebruiker niet gevonden"
+  }
+}

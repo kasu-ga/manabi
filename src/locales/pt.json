@@ -1,0 +1,80 @@
+{
+  "common": {
+    "language": "Idioma",
+    "new": "Novo",
+    "email": "Email",
+    "password": "Senha",
+    "continue": "Continuar",
+    "send": "Enviar",
+    "settings": "Configurações",
+    "logout": "Sair",
+    "edit": "Editar",
+    "add": "Adicionar",
+    "delete": "Excluir",
+    "save": "Salvar",
+    "name": "Nome",
+    "create": "Criar",
+    "text": "Texto",
+    "reading": "Leitura",
+    "back": "Voltar",
+    "front": "Frente",
+    "not-selected": "Não selecionado",
+    "yes": "Sim"
+  },
+  "signin": {
+    "email-or-password-invalid": "Email ou senha incorretos",
+    "title": "Entrar",
+    "forgot-password": "Esqueceu sua senha?",
+    "new-here": "Novo aqui?",
+    "sign-up": "Cadastrar-se"
+  },
+  "signup": {
+    "title": "Criar uma Conta",
+    "has-account": "Já tem uma conta?",
+    "sign-in": "Entrar",
+    "email-already-exists": "Email já existe",
+    "invalid-email": "Email inválido",
+    "invalid-password": "Senha muito curta"
+  },
+  "recovery": {
+    "title": "Código de Recuperação",
+    "description": "Digite seu endereço de email e você receberá um código de recuperação em breve. Use-o para redefinir sua senha."
+  },
+  "change-password": {
+    "title": "Alterar Senha",
+    "description": "Digite o código de recuperação que você recebeu por email. Se ainda não o recebeu, verifique sua pasta de spam ou solicite um novo na página anterior.",
+    "recovery-code": "Código de recuperação",
+    "new-password": "Nova senha"
+  },
+  "user-desks": { "title": "Suas Mesas", "review": "Revisar" },
+  "study": {
+    "review": "Revisar",
+    "show-back": "Mostrar verso",
+    "again": "Novamente",
+    "hard": "Difícil",
+    "normal": "Normal",
+    "easy": "Fácil",
+    "very-easy": "Muito Fácil",
+    "empty": "Não há nada para ver"
+  },
+  "delete-desk": {
+    "write": "Escreva",
+    "description": "abaixo para confirmar que você realmente deseja excluir esta Mesa."
+  },
+  "delete-card": {
+    "write": "Escreva",
+    "description": "abaixo para confirmar que você realmente deseja excluir este Cartão."
+  },
+  "card-actions": {
+    "invalid-image-extname": "Formatos válidos: (png, jpeg, jpg)",
+    "invalid-audio-extname": "Formatos válidos: (mp3)",
+    "delete-match-error": "Não é o valor desejado",
+    "limit-exceeded": "Limite de cartões atingido"
+  },
+  "desk-actions": {
+    "name-too-short": "Nome muito curto",
+    "name-does-not-match": "O nome não corresponde",
+    "limit-exceeded": "Limite de mesas atingido"
+  },
+  "reset-password": { "user-not-found": "Usuário não encontrado" }
+}

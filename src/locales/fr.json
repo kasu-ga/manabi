@@ -1,0 +1,85 @@
+{
+  "common": {
+    "language": "Langue",
+    "new": "Nouveau",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "continue": "Continuer",
+    "send": "Envoyer",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "name": "Nom",
+    "create": "Créer",
+    "text": "Texte",
+    "reading": "Lecture",
+    "back": "Retour",
+    "front": "Face avant",
+    "not-selected": "Non sélectionné",
+    "yes": "Oui"
+  },
+  "signin": {
+    "email-or-password-invalid": "E-mail ou mot de passe incorrect",
+    "title": "Se connecter",
+    "forgot-password": "Mot de passe oublié ?",
+    "new-here": "Nouveau ici ?",
+    "sign-up": "S'inscrire"
+  },
+  "signup": {
+    "title": "Créer un compte",
+    "has-account": "Vous avez déjà un compte ?",
+    "sign-in": "Se connecter",
+    "email-already-exists": "L'e-mail existe déjà",
+    "invalid-email": "E-mail invalide",
+    "invalid-password": "Mot de passe trop court"
+  },
+  "recovery": {
+    "title": "Code de récupération",
+    "description": "Saisissez votre adresse e-mail, vous recevrez bientôt un code de récupération. Utilisez-le pour réinitialiser votre mot de passe."
+  },
+  "change-password": {
+    "title": "Changer le mot de passe",
+    "description": "Saisissez le code de récupération que vous avez reçu par e-mail. Si vous ne l'avez pas encore reçu, vérifiez votre dossier de spam ou demandez-en un nouveau sur la page précédente.",
+    "recovery-code": "Code de récupération",
+    "new-password": "Nouveau mot de passe"
+  },
+  "user-desks": {
+    "title": "Vos bureaux",
+    "review": "Révision"
+  },
+  "study": {
+    "review": "Révision",
+    "show-back": "Afficher l'arrière",
+    "again": "Encore",
+    "hard": "Difficile",
+    "normal": "Normal",
+    "easy": "Facile",
+    "very-easy": "Très facile",
+    "empty": "Il n'y a rien à montrer"
+  },
+  "delete-desk": {
+    "write": "Écrivez",
+    "description": "ci-dessous pour confirmer que vous souhaitez vraiment supprimer ce bureau."
+  },
+  "delete-card": {
+    "write": "Écrivez",
+    "description": "ci-dessous pour confirmer que vous souhaitez vraiment supprimer cette carte."
+  },
+  "card-actions": {
+    "invalid-image-extname": "Formats valides : (png, jpeg, jpg)",
+    "invalid-audio-extname": "Formats valides : (mp3)",
+    "delete-match-error": "Ce n'est pas la valeur souhaitée",
+    "limit-exceeded": "Limite de cartes atteinte"
+  },
+  "desk-actions": {
+    "name-too-short": "Nom trop court",
+    "name-does-not-match": "Le nom ne correspond pas",
+    "limit-exceeded": "Limite de bureau atteinte"
+  },
+  "reset-password": {
+    "user-not-found": "Utilisateur introuvable"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "common": {
+    "language": "Idioma",
+    "new": "Nuevo",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "continue": "Continuar",
+    "send": "Enviar",
+    "settings": "Configuración",
+    "logout": "Cerrar sessión",
+    "edit": "Editar",
+    "add": "Agregar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "name": "Nombre",
+    "create": "Crear",
+    "text": "Texto",
+    "reading": "Lectura",
+    "back": "Reverso",
+    "front": "Frente",
+    "not-selected": "No seleccionado",
+    "yes": "Si"
+  },
+  "signin": {
+    "title": "Iniciar sessión",
+    "forgot-password": "¿Olvidaste tu contraseña?",
+    "new-here": "¿Eres nuevo?",
+    "sign-up": "Regístrate",
+    "email-or-password-invalid": "Correo o contraseña incorrecta"
+  },
+  "signup": {
+    "title": "Crear una cuenta",
+    "has-account": "¿Tienes una cuenta?",
+    "sign-in": "Inicia sesión",
+    "email-already-exists": "El email ya existe",
+    "invalid-email": "Email invalido",
+    "invalid-password": "Contraseña demasiado corta"
+  },
+  "recovery": {
+    "title": "Código de Recuperación",
+    "description": "Ingresa tu correo electrónico y en breve recibirás un código de recuperación con el que podrás cambiar tu contraseña."
+  },
+  "change-password": {
+    "title": "Actualización de Contraseña",
+    "description": "Ingresa el código de recuperación que recibiste a tu correo electrónico. Si aun no lo recibes revisa la bandeja de spam o vuelve a solicitar uno nuevo en la pagina anterior.",
+    "recovery-code": "Código de recuperación",
+    "new-password": "Nueva contraseña"
+  },
+  "user-desks": {
+    "title": "Tus Desks",
+    "review": "Revisado"
+  },
+  "study": {
+    "review": "Revisión",
+    "show-back": "Mostrar Reverso",
+    "again": "De Nuevo",
+    "hard": "Difícil",
+    "normal": "Normal",
+    "easy": "Facíl",
+    "very-easy": "Muy Facíl",
+    "empty": "No hay nada para mostrar"
+  },
+  "delete-desk": {
+    "write": "Escribe",
+    "description": "abajo para confirmar que realmente quieres eliminar este Desk."
+  },
+  "delete-card": {
+    "write": "Escribe",
+    "description": "abajo para confirmar que realmente quieres eliminar esta Card."
+  },
+  "card-actions": {
+    "invalid-image-extname": "Formatos validos: (png,jpeg,jpg)",
+    "invalid-audio-extname": "Formatos validos: (mp3)",
+    "delete-match-error": "No es el valor deseado",
+    "limit-exceeded": "Límite de Cards alcanzado"
+  },
+  "desk-actions": {
+    "name-too-short": "Nombre demasiado corto",
+    "name-does-not-match": "El nombre no coincide",
+    "limit-exceeded": "Límite de Desk alcanzado"
+  },
+  "reset-password": {
+    "user-not-found": "El usuario no existe"
+  }
+}
