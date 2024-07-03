@@ -38,6 +38,7 @@ export const signUpAction: FormSubmitAction = async (formState, formData) => {
     cookies().set("refresh_token", res.refresh_token);
     redirect("/");
   } catch (error) {
+    console.log(error);
     if (error instanceof Error && error.message === "NEXT_REDIRECT")
       throw error;
     return {

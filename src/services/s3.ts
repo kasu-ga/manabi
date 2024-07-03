@@ -7,7 +7,7 @@ import {
 } from "@aws-sdk/client-s3";
 import sharp from "sharp";
 
-import { AWS_BUCKET_NAME, s3 } from "../lib/aws-s3";
+import { BUCKET_NAME, s3 } from "../lib/aws-s3";
 
 export async function compressFile(file: File) {
   const buffer = Buffer.from(await file.arrayBuffer());
@@ -28,7 +28,7 @@ export async function submitS3Object(file: File, prefix: string) {
   const [buffer, extname] = await compressFile(file);
   const fileName = `${prefix}.${extname}`;
   const command = new PutObjectCommand({
-    Bucket: AWS_BUCKET_NAME,
+    Bucket: BUCKET_NAME,
     Key: fileName,
     Body: buffer,
   });
@@ -38,7 +38,7 @@ export async function submitS3Object(file: File, prefix: string) {
 
 export async function readS3Object(fileName: string) {
   const command = new GetObjectCommand({
-    Bucket: AWS_BUCKET_NAME,
+    Bucket: BUCKET_NAME,
     Key: fileName,
   });
   const res = await s3.send(command);
@@ -47,7 +47,7 @@ export async function readS3Object(fileName: string) {
 
 export async function deleteS3Object(fileName: string) {
   const command = new DeleteObjectCommand({
-    Bucket: AWS_BUCKET_NAME,
+    Bucket: BUCKET_NAME,
     Key: fileName,
   });
   await s3.send(command);

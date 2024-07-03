@@ -1,16 +1,12 @@
 import { S3Client } from "@aws-sdk/client-s3";
 
-export const {
-  AWS_PUBLIC_KEY,
-  AWS_SECRET_KEY,
-  AWS_BUCKET_NAME,
-  AWS_BUCKET_REGION,
-} = process.env;
+export const { S3_PUBLIC_KEY, S3_SECRET_KEY, BUCKET_NAME, BUCKET_REGION } =
+  process.env;
 
 export const s3 = new S3Client({
-  region: AWS_BUCKET_REGION,
+  region: BUCKET_REGION,
   credentials: {
-    accessKeyId: AWS_PUBLIC_KEY ?? "",
-    secretAccessKey: AWS_SECRET_KEY ?? "",
+    accessKeyId: S3_PUBLIC_KEY ?? "",
+    secretAccessKey: S3_SECRET_KEY ?? "",
   },
 });
