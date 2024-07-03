@@ -1,4 +1,4 @@
-import uniqid from "uniqid";
+import shortId from "short-uuid";
 import { instance, check, object, optional, pipe, string } from "valibot";
 import { redirect } from "next/navigation";
 
@@ -85,7 +85,7 @@ export function createCardAction(deskId: string): FormSubmitAction {
         },
       };
     const { backAudio, frontAudio, backImage, frontImage, ...newData } = values;
-    const cardId = uniqid();
+    const cardId = shortId.generate();
     const files = await submitCardFiles(cardId, values);
     await db.insert(Card).values({
       id: cardId,

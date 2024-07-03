@@ -30,8 +30,8 @@
     "react-dom": "^18",
     "react-textarea-autosize": "^8.5.3",
     "sharp": "^0.33.4",
+    "short-uuid": "^5.2.0",
     "tailwind-merge": "^2.2.1",
-    "uniqid": "^5.4.0",
     "valibot": "^0.32.0"
   },
   "devDependencies": {
@@ -41,7 +41,6 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@types/uniqid": "^5.3.4",
     "drizzle-kit": "^0.22.7",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",

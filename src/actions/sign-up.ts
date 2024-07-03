@@ -1,6 +1,6 @@
 "use server";
 
-import uniqid from "uniqid";
+import shortId from "short-uuid";
 import { redirect } from "next/navigation";
 import { email, minLength, object, pipe, string } from "valibot";
 import { cookies } from "next/headers";
@@ -31,7 +31,7 @@ export const signUpAction: FormSubmitAction = async (formState, formData) => {
   data.email = data.email.toLowerCase().trim();
   try {
     const res = await mixe.authentication.signup({
-      id: uniqid(),
+      id: shortId.generate(),
       ...data,
     });
     cookies().set("access_token", res.access_token);

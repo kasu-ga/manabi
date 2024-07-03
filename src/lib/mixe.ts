@@ -9,6 +9,7 @@ import { Code } from "@/db/schemas/code";
 export const MIXE_SECRET = process.env.MIXE_SECRET;
 
 const adapter = new DrizzleSQLiteAdapter(db, {
+  // @ts-expect-error
   user: User,
   session: Session,
   code: Code,
