@@ -14,6 +14,12 @@ const nextConfig = {
         port: "3000",
         pathname: "/assets/**",
       },
+      {
+        protocol: "https",
+        hostname: "manabi-lilac.vercel.app",
+        port: "",
+        pathname: "/assets/**",
+      },
     ],
   },
 };
