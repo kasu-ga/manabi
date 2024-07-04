@@ -1,13 +1,14 @@
 "use server";
 
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
+import { redirect, RedirectType } from "next/navigation";
 import { object, string } from "valibot";
 
 import { FormSubmitAction } from "@/components/ui/form";
 import { validateSchema } from "@/lib/valibot";
 import { mixe } from "@/lib/mixe";
 import { getTranslations } from "@/services/translations";
+import { SessionCookie } from "@/lib/cookies";
 
 export const signInAction: FormSubmitAction = async (formState, formData) => {
   if (!formData) return formState;
@@ -30,7 +31,14 @@ export const signInAction: FormSubmitAction = async (formState, formData) => {
     if ("code" in res) return formState;
     cookies().set("access_token", res.access_token);
     cookies().set("refresh_token", res.refresh_token);
-    redirect("/");
+    cookies().set(
+      "session",
+      await SessionCookie.encode({
+        user: res.user,
+        session: res.session,
+      })
+    );
+    redirect("/", RedirectType.push);
   } catch (error) {
     if (error instanceof Error && error.message === "NEXT_REDIRECT")
       throw error;

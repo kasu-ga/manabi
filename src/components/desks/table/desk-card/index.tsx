@@ -14,7 +14,6 @@ import "moment/locale/ru";
 
 import { SelectDesk } from "@/db/schemas/desk";
 import { PencilIcon } from "@/components/icons/pen";
-import { ShareIcon } from "@/components/icons/share";
 import { DotsVerticalIcon } from "@/components/icons/dots-vertical";
 import { TrashIcon } from "@/components/icons/trash";
 import { Dropdown } from "@/components/ui/dropdown";
@@ -22,12 +21,12 @@ import { DropdownButton } from "@/components/ui/dropdown/button";
 import { DropdownMenu } from "@/components/ui/dropdown/menu";
 import { PlusIcon } from "@/components/icons/plus";
 import { getTranslations } from "@/services/translations";
-import { getSessionData } from "@/services/session";
+import { cookies } from "next/headers";
 
 export async function DeskCard(desk: SelectDesk) {
-  const { user } = await getSessionData();
+  const language = cookies().get("language")?.value ?? "en";
   const translations = await getTranslations();
-  moment.locale(user.language === "zh" ? "zh-cn" : user.language ?? "en");
+  moment.locale(language === "zh" ? "zh-cn" : language);
   return (
     <article className="relative bg-white rounded-3xl border-2 border-zinc-200 p-6 flex justify-between items-center gap-4">
       <header>

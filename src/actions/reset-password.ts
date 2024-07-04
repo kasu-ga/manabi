@@ -72,7 +72,7 @@ export const sendResetPasswordCodeAction: FormSubmitAction = async (
         root: translations["reset-password"]["user-not-found"],
       },
     };
-  const currentSession = await getSessionData(false);
+  const currentSession = await getSessionData();
   const session = currentSession
     ? currentSession.session
     : await mixe.session.create(user.id, { limited: true });

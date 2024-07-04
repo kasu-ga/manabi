@@ -28,7 +28,9 @@ export const changeLanguageAction: FormSubmitAction = async (
     formData.get("language")
   );
   if (errors) return { errors };
-  const { session, user } = await getSessionData();
+  const sessionData = await getSessionData();
+  if (!sessionData) return formState;
+  const { session, user } = sessionData;
   await db
     .update(User)
     .set({

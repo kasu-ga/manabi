@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronIcon } from "@/components/icons/chevron";
 import { cn } from "@/lib/utils";
 import { useClickOutside } from "@/hook/click-outside";
@@ -16,7 +16,8 @@ export function Select<T extends Record<string, string>>({
   value: defaultValue,
   options,
 }: SelectOptions<T>) {
-  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const [open, setOpen] = useState<boolean>();
   const [value, setValue] = useState(defaultValue);
   const show = useCallback(() => {
     setOpen((n) => !n);
@@ -27,7 +28,7 @@ export function Select<T extends Record<string, string>>({
   useEffect(() => {
     setOpen(false);
   }, [value]);
-  const ref = useClickOutside<HTMLDivElement>(hide);
+  useClickOutside<HTMLDivElement>(ref, hide);
   return (
     <div ref={ref} className="relative flex items-center">
       <input readOnly className="hidden" name={name} value={value} />

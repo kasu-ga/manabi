@@ -13,7 +13,9 @@ export default async function Page({
 }: {
   params: { deskId: string };
 }) {
-  const { user } = await getSessionData();
+  const sessionData = await getSessionData();
+  if (!sessionData) return notFound();
+  const { user } = sessionData;
   const desk = await db.query.desk.findFirst({
     where: eq(Desk.id, deskId),
   });

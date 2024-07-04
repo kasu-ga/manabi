@@ -9,7 +9,6 @@ import {
   useState,
 } from "react";
 
-import { HOST_NAME } from "@/lib/consts";
 import { ImageIcon } from "@/components/icons/image";
 import { TrashIcon } from "@/components/icons/trash";
 
@@ -24,7 +23,7 @@ export function CardImageInput({
 
   useEffect(() => {
     if (!defaultValue) return;
-    setUrl(`${HOST_NAME}/assets/${defaultValue}`);
+    setUrl(`/assets/${defaultValue}`);
   }, [defaultValue]);
 
   const handleChangeFile: ChangeEventHandler<HTMLInputElement> = useCallback(
@@ -36,11 +35,14 @@ export function CardImageInput({
     []
   );
 
-  const handleDelete: MouseEventHandler<HTMLButtonElement> = (event) => {
-    event.stopPropagation();
-    event.preventDefault();
-    setUrl(null);
-  };
+  const handleDelete: MouseEventHandler<HTMLButtonElement> = useCallback(
+    (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      setUrl(null);
+    },
+    []
+  );
 
   return (
     <div className="relative w-44 aspect-square rounded-xl overflow-hidden mb-4 grid place-items-center bg-zinc-200/50">

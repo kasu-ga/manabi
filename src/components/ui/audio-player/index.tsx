@@ -4,7 +4,6 @@ import { ReactEventHandler, useCallback, useRef, useState } from "react";
 
 import { PlayIcon } from "@/components/icons/play";
 import { PauseIcon } from "@/components/icons/puase";
-import { HOST_NAME } from "@/lib/consts";
 
 export function AudioPlayer({ src }: { src: string }) {
   const ref = useRef<HTMLAudioElement | null>(null);
@@ -53,7 +52,7 @@ export function AudioPlayer({ src }: { src: string }) {
         onEnded={handleOnEnded}
         ref={ref}
         className="hidden"
-        src={`${HOST_NAME}/assets/${src}`}
+        src={`/assets/${src}`}
       />
       <button onClick={handlePauseClick}>
         {paused ? <PlayIcon /> : <PauseIcon />}

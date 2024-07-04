@@ -9,6 +9,7 @@ import { FormSubmitAction } from "@/components/ui/form";
 import { validateSchema } from "@/lib/valibot";
 import { mixe } from "@/lib/mixe";
 import { getTranslations } from "@/services/translations";
+import { SessionCookie } from "@/lib/cookies";
 
 export const signUpAction: FormSubmitAction = async (formState, formData) => {
   if (!formData) return formState;
@@ -36,6 +37,13 @@ export const signUpAction: FormSubmitAction = async (formState, formData) => {
     });
     cookies().set("access_token", res.access_token);
     cookies().set("refresh_token", res.refresh_token);
+    cookies().set(
+      "session",
+      await SessionCookie.encode({
+        user: res.user,
+        session: res.session,
+      })
+    );
     redirect("/");
   } catch (error) {
     console.log(error);

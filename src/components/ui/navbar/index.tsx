@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 import { PlusIcon } from "@/components/icons/plus";
 import { Dropdown } from "../dropdown";
@@ -9,8 +10,12 @@ import { SettingsIcon } from "@/components/icons/settings";
 import { LogoutIcon } from "@/components/icons/logout";
 import { Brand } from "../brand";
 import { getTranslations } from "@/services/translations";
+import { getSessionData } from "@/services/session";
 
 export async function Navbar() {
+  const sessionData = await getSessionData();
+  if (!sessionData) return notFound();
+  const { user } = sessionData;
   const translations = await getTranslations();
   return (
     <header className="relative bg-white shadow h-20 border-b border-zinc-200 mb-4 z-50">
@@ -28,7 +33,7 @@ export async function Navbar() {
           </Link>
           <Dropdown>
             <DropdownButton>
-              <NavbarUserAvatar />
+              <NavbarUserAvatar email={"kasuga.fn@outlook.com"} />
             </DropdownButton>
             <DropdownMenu className="w-44 p-2">
               <Link

@@ -4,9 +4,12 @@ import { Main } from "@/components/ui/main";
 import { Title } from "@/components/ui/title";
 import { getSessionData } from "@/services/session";
 import { getTranslations } from "@/services/translations";
+import { notFound } from "next/navigation";
 
 export default async function ChangePassword() {
-  const { session } = await getSessionData();
+  const sessionData = await getSessionData();
+  if (!sessionData) return notFound();
+  const { session } = sessionData;
   const translations = await getTranslations();
   return (
     <Main>

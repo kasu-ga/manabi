@@ -35,11 +35,11 @@ export default async function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  const response = NextResponse.next();
+
   const cookies = req.cookies;
   const access_token = cookies.get("access_token")?.value;
   const refresh_token = cookies.get("refresh_token")?.value;
-
-  const response = NextResponse.next();
 
   const defaultLanguage = await getTranslations(req.headers);
 

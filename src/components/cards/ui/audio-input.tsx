@@ -4,7 +4,6 @@ import { AudioIcon } from "@/components/icons/audio";
 import { PlayIcon } from "@/components/icons/play";
 import { PauseIcon } from "@/components/icons/puase";
 import { TrashIcon } from "@/components/icons/trash";
-import { HOST_NAME } from "@/lib/consts";
 import {
   ChangeEventHandler,
   MouseEventHandler,
@@ -32,7 +31,7 @@ export function CardAudioInput({
 
   useEffect(() => {
     if (!defaultValue) return;
-    setUrl(`${HOST_NAME}/assets/${defaultValue}`);
+    setUrl(`/assets/${defaultValue}`);
     setFileName(defaultValue);
   }, [defaultValue]);
 
@@ -46,29 +45,35 @@ export function CardAudioInput({
     []
   );
 
-  const handlePlayAudio: MouseEventHandler<HTMLButtonElement> = (event) => {
-    event.stopPropagation();
-    event.preventDefault();
+  const handlePlayAudio: MouseEventHandler<HTMLButtonElement> = useCallback(
+    (event) => {
+      event.stopPropagation();
+      event.preventDefault();
 
-    if (audio.current) {
-      if (audio.current.paused) {
-        audio.current.play();
-        setPaused(false);
-      } else {
-        audio.current.pause();
-        setPaused(true);
+      if (audio.current) {
+        if (audio.current.paused) {
+          audio.current.play();
+          setPaused(false);
+        } else {
+          audio.current.pause();
+          setPaused(true);
+        }
       }
-    }
-  };
+    },
+    []
+  );
 
-  const handleDelete: MouseEventHandler<HTMLButtonElement> = (event) => {
-    event.stopPropagation();
-    event.preventDefault();
-    setUrl(undefined);
-    audio.current?.pause();
-    setPaused(true);
-    setFileName(undefined);
-  };
+  const handleDelete: MouseEventHandler<HTMLButtonElement> = useCallback(
+    (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      setUrl(undefined);
+      audio.current?.pause();
+      setPaused(true);
+      setFileName(undefined);
+    },
+    []
+  );
 
   return (
     <label className="relative transition-[border-color] hover:border-rose-500 rounded-xl border-2 border-zinc-200 flex items-center h-12 px-4 gap-4">

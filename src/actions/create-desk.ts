@@ -26,7 +26,9 @@ export const createDeskAction: FormSubmitAction = async (
     rawName
   );
   if (errors) return { errors };
-  const { user } = await getSessionData();
+  const sessionData = await getSessionData();
+  if (!sessionData) return formState;
+  const { user } = sessionData;
   const desks = await db
     .select({ count: count() })
     .from(Desk)

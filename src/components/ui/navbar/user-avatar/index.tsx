@@ -1,11 +1,9 @@
 import Image from "next/image";
 
 import { Gravatar } from "@/lib/gravatar";
-import { getSessionData } from "@/services/session";
 
-export async function NavbarUserAvatar() {
-  const { user } = await getSessionData();
-  const avatar = Gravatar.url(user.email);
+export async function NavbarUserAvatar({ email }: { email: string }) {
+  const avatar = Gravatar.url(email);
   return (
     <div className="relative w-10 aspect-square">
       <Image

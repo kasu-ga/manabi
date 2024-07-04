@@ -17,7 +17,9 @@ export async function getCardsToStudy(
 
   if (!desk) return null;
 
-  const { user } = await getSessionData();
+  const sessionData = await getSessionData();
+  if (!sessionData) return null;
+  const { user } = sessionData;
   if (desk.userId !== user.id) return null;
 
   const newCards = await db.query.card.findMany({

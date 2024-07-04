@@ -19,19 +19,18 @@ export function Input({
   const [value, setValue] = useState<string>((defaultValue as string) ?? "");
   const [error, setError] = useState<string>();
   const { errors } = useFormContext();
-  const clearError = useCallback(() => {
-    setError(undefined);
-  }, [setError]);
+
+  const clearError = useCallback(() => setError(undefined), []);
   const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
-    (e) => {
-      setValue(e.target.value);
-    },
+    (e) => setValue(e.target.value),
     []
   );
+
   useEffect(() => {
-    if (!props.name) return;
-    setError(errors ? errors[props.name.toLowerCase()] : undefined);
-  }, [errors, props]);
+    if (props.name) {
+      setError(errors?.[props.name.toLowerCase()]);
+    }
+  }, [errors, props.name]);
   return (
     <div className="w-full">
       <input

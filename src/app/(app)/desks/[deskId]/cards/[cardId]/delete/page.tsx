@@ -13,7 +13,9 @@ export default async function Page({
 }: {
   params: { cardId: string };
 }) {
-  const { user } = await getSessionData();
+  const sessionData = await getSessionData();
+  if (!sessionData) return notFound();
+  const { user } = sessionData;
   const card = await db.query.card.findFirst({
     where: eq(Card.id, cardId),
   });

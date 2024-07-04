@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 
 import { SelectCard } from "@/db/schemas/card";
 import { processCardReview } from "@/services/process-review";
-import { HOST_NAME } from "@/lib/consts";
 import { PencilIcon } from "@/components/icons/pen";
 import { TrashIcon } from "@/components/icons/trash";
 import { Dropdown } from "@/components/ui/dropdown";
@@ -40,31 +39,36 @@ export function DeskStudy({
   };
 }) {
   const [cards, setCards] = useState(deskCards);
-  const [data, setData] = useState<StudyCard>();
   const [position, setPosition] = useState<"front" | "back">("front");
   const [card, setCard] = useState(deskCards[0]);
+
   const showBack = useCallback(() => {
     setPosition("back");
   }, []);
+
   useEffect(() => {
+    if (!cards.length) return;
     const newCard = cards[0];
     setCard(newCard);
   }, [cards]);
-  useEffect(() => {
-    if (!card) return;
-    setData({
+
+  const data = useMemo(() => {
+    if (!card) return null;
+    return {
       text: card[position === "front" ? "frontText" : "backText"],
       reading: card[position === "front" ? "frontReading" : "backReading"],
       image: card[position === "front" ? "frontImage" : "backImage"],
       audio: card[position === "front" ? "frontAudio" : "backAudio"],
-    });
+    };
   }, [card, position]);
+
   const submitReviewRating = async (rating: number) => {
     await processCardReview(card?.id, rating);
     if (cards.length === 1) return window.location.reload();
     setCards(cards.slice(1));
     setPosition("front");
   };
+
   return (
     <>
       {data ? (
@@ -97,7 +101,7 @@ export function DeskStudy({
             {data.image ? (
               <div className="relative w-48 aspect-square mb-8 rounded-xl overflow-hidden">
                 <Image
-                  src={`${HOST_NAME}/assets/${data.image}`}
+                  src={`/assets/${data.image}`}
                   fill
                   className="object-cover w-full h-full"
                   alt="Front Image"
