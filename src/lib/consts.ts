@@ -10,6 +10,8 @@ import ruTranslations from "../locales/ru.json";
 import itTranslations from "../locales/it.json";
 import nlTranslations from "../locales/nl.json";
 
+export const HOST_NAME = process.env.HOST_NAME ?? "http://localhost:3000";
+
 export const Languages = {
   es: {
     label: "Español",

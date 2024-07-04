@@ -4,6 +4,7 @@ import { AudioIcon } from "@/components/icons/audio";
 import { PlayIcon } from "@/components/icons/play";
 import { PauseIcon } from "@/components/icons/puase";
 import { TrashIcon } from "@/components/icons/trash";
+import { HOST_NAME } from "@/lib/consts";
 import {
   ChangeEventHandler,
   MouseEventHandler,
@@ -31,7 +32,7 @@ export function CardAudioInput({
 
   useEffect(() => {
     if (!defaultValue) return;
-    setUrl(`/assets/${defaultValue}`);
+    setUrl(`${HOST_NAME}/assets/${defaultValue}`);
     setFileName(defaultValue);
   }, [defaultValue]);
 

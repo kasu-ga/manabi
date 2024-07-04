@@ -11,6 +11,7 @@ import {
 
 import { ImageIcon } from "@/components/icons/image";
 import { TrashIcon } from "@/components/icons/trash";
+import { HOST_NAME } from "@/lib/consts";
 
 export function CardImageInput({
   name,
@@ -23,7 +24,7 @@ export function CardImageInput({
 
   useEffect(() => {
     if (!defaultValue) return;
-    setUrl(`/assets/${defaultValue}`);
+    setUrl(`${HOST_NAME}/assets/${defaultValue}`);
   }, [defaultValue]);
 
   const handleChangeFile: ChangeEventHandler<HTMLInputElement> = useCallback(

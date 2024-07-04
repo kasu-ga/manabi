@@ -13,6 +13,7 @@ import { DropdownButton } from "@/components/ui/dropdown/button";
 import { DotsVerticalIcon } from "@/components/icons/dots-vertical";
 import { DropdownMenu } from "@/components/ui/dropdown/menu";
 import { AudioPlayer } from "@/components/ui/audio-player";
+import { HOST_NAME } from "@/lib/consts";
 
 export interface StudyCard {
   text?: string | null;
@@ -101,7 +102,7 @@ export function DeskStudy({
             {data.image ? (
               <div className="relative w-48 aspect-square mb-8 rounded-xl overflow-hidden">
                 <Image
-                  src={`/assets/${data.image}`}
+                  src={`${HOST_NAME}/assets/${data.image}`}
                   fill
                   className="object-cover w-full h-full"
                   alt="Front Image"
